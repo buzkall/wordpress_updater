@@ -31,11 +31,22 @@ You can create an alias in your .bash_profile or your .bash_aliases
 The script will output something like this
 
 	#############################################
-	   Updating wp in ~/path_to_site1
+	Updating wp in ~/path_to_site1
 	#############################################
-	Success: Plugin already updated.
+	Enabling Maintenance mode...
+	Downloading update from https://downloads.wordpress.org/plugin/wp-smushit.zip...
+	Unpacking the update...
+	Installing the latest version...
+	Removing the old version of the plugin...
+	Plugin updated successfully.
+	Disabling Maintenance mode...
+	+------------+-------------+-------------+---------+
+	| name       | old_version | new_version | status  |
+	+------------+-------------+-------------+---------+
+	| wp-smushit | 2.6.1       | 2.6.2       | Updated |
+	+------------+-------------+-------------+---------+
+	Success: Updated 1 of 1 plugins.
 	Success: WordPress is up to date.
-
 	core-default-4.7.3-en_GB-1485573025.zip'...
 	Unpacking the update...
 	Installing the latest version...
@@ -43,7 +54,7 @@ The script will output something like this
 	Success: Updated 1/1 translations.
 	Updating 'English (UK)' translation for WordPress 4.7.3...
 	#############################################
-	   Looking for lang files in ~/path_to_site1 (keeping en_EN)
+	Looking for lang files in ~/path_to_site1 (keeping en_EN)
 	#############################################
 	Deleting...  ./wp-content/languages/admin-en_GB.mo
 	Deleting...  ./wp-content/languages/admin-network-en_GB.mo
@@ -62,5 +73,5 @@ The script will output something like this
 	Deleting... ./wp-content/plugins/quotes-collection/languages/quotes-collection-es_ES.po
 	Deleting... ./wp-content/plugins/wp-db-backup/wp-db-backup-es_ES.po
 	Deleting... ./wp-content/plugins/wp-super-cache/languages/wp-super-cache-es_ES.po
-	
+
 	17 language files deleted
